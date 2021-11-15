@@ -1,0 +1,131 @@
+start:
+say Typing(2000)
+say "**Take care of your health and protect others by following the tips below. :**"
+say Typing(3000)
+goto bp
+
+bp:
+  say {
+    "meta": { "message_id":"jeprefereunestring", "sender":"bot" },
+    "content_type": "carousel",
+    "elements": [
+      {
+        "content_type": "card",
+        "image_url": "https://cdn.csml.dev/customers/0833ea07-0f4a-4086-8409-d14c4b49bdf3/files/8f343206-d50e-4acf-a978-57fe9513927e/bp_lavagemains_w.png",
+        "subtitle": "Frequent hand washing",
+        "buttons": [
+          {
+            "content_type": "button",
+            "title": "Find out more",
+            "theme": "primary",
+            "icon": "info",
+            "payload": "lavagemains"
+          },
+        ],
+      },
+      {
+        "content_type": "card",
+        "image_url": "https://cdn.csml.dev/customers/0833ea07-0f4a-4086-8409-d14c4b49bdf3/files/ac09b28e-cc5f-493a-af81-ae1fa8f3df03/bp_evitergroupes_w.png",
+        "subtitle": "Avoid close contacts",
+        "buttons": [
+          {
+            "content_type": "button",
+            "title": "Find out more",
+            "theme": "primary",
+            "icon": "info",
+            "payload": "contactproche"
+          },
+        ],
+      },
+      {
+        "content_type": "card",
+        "image_url": "https://cdn.csml.dev/customers/0833ea07-0f4a-4086-8409-d14c4b49bdf3/files/b348a02a-642a-490d-b279-8f76ce5c0f1e/bp_evitercontact_w.png",
+        "subtitle": "Avoid touching your eyes, nose and mouth",
+        "buttons": [
+          {
+            "content_type": "button",
+            "title": "Find out more",
+            "theme": "primary",
+            "icon": "info",
+            "payload": "contact"
+          },
+        ],
+      },
+      {
+        "content_type": "card",
+        "image_url": "https://cdn.csml.dev/customers/0833ea07-0f4a-4086-8409-d14c4b49bdf3/files/178794d7-beab-489f-8780-68266a52a8dd/bp_regleshygienes_w.png",
+        "subtitle": "Observe rules of respiratory hygiene",
+        "buttons": [
+          {
+            "content_type": "button",
+            "title": "Find out more",
+            "theme": "primary",
+            "icon": "info",
+            "payload": "hygiene"
+          },
+        ],
+      },
+      {
+        "content_type": "card",
+        "image_url": "https://cdn.csml.dev/customers/0833ea07-0f4a-4086-8409-d14c4b49bdf3/files/67270127-fd9f-451b-ad0b-3e4cb3fd5832/bp_suivreinfos_w.png",
+        "subtitle": "Get informed and follow your doctor's advice",
+        "buttons": [
+          {
+            "content_type": "button",
+            "title": "Find out more",
+            "theme": "primary",
+            "icon": "info",
+            "payload": "info"
+          },
+        ],
+      },
+    ]
+  }
+  say Button("Back") as backbtn
+  goto router
+
+router:
+  hold
+  if (event == "lavagemains") goto bp_lavagemains
+  else if (event == "contactproche") goto bp_evitergroup
+  else if (event == "contact") goto bp_evitercontact
+  else if (event == "hygiene") goto bp_regleshygienes
+  else if (event == "info") goto bp_resterinforme
+  else goto flow Default
+
+bp_lavagemains:
+  say "Washing your hands with a hydro-alcoholic solution or soap and water kills the virus if it is present on your hands."
+  say Video("https://www.youtube.com/watch?v=3PmVJQUCm4E")
+  goto router
+
+bp_evitergroup:
+        say Typing(2000)
+        say "Maintain a distance of at least 1 metre from other people, especially if they are coughing, sneezing or have a fever."
+        say Typing(2000)
+        say "When a person infected with a respiratory virus, such as COVID-19, coughs or sneezes, he or she will cough or sneeze, and will spray small droplets containing the virus. If you are too close, you can inhale the virus."
+  say Button("Back") as backbtn
+        goto router
+
+bp_evitercontact:
+        say "Hands are in contact with many surfaces that can be contaminated with the virus. If you touch your eyes, nose or mouth, you may come into contact with the virus on these surfaces."
+  say Button("Back") as backbtn
+        goto router
+
+bp_regleshygienes:
+        say Typing(2000)
+        say     "Cough or sneeze into the crease of the elbow or with a handkerchief if coughing or sneezing - dispose of the handkerchief immediately afterwards in a closed rubbish bin and wash your hands with a hydro-alcoholic solution or soap and water."
+        say Typing(2000)
+        say "Covering your mouth and nose when coughing or sneezing helps prevent the spread of viruses and other pathogens."
+  say Button("Back") as backbtn
+        goto router
+
+bp_resterinforme:
+        say Typing(2000)
+        say "Keep abreast of the latest developments regarding COVID-19. Follow the advice of your doctor, national and local health authorities or your employer on how to protect yourself and others from COVID-19."
+        say Typing(2000)
+        say "National and local authorities have the most up-to-date information on whether or not COVID-19 is spreading in your area. They are in the best position to explain what people in your area should do to protect themselves."
+    say Button("Back") as backbtn
+  goto router
+
+
+

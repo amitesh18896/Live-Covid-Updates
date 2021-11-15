@@ -1,0 +1,14 @@
+start:
+	say "Here is a daily Higlight of the development of Coronavirus, as reported by the WHO"
+	say Typing(3000)
+	say "As of **June 22nd, 10 am**"
+	say Typing(2000)
+	say "WHO says - In this edition, a special focus update is provided on SARS-CoV-2 Variants of Interest (VOIs) and Variants of Concern (VOCs) Alpha (B.1.1.7), Beta (B.1.351), Gamma (P.1), and Delta (B.1.617.2). This includes updates on emerging evidence surrounding the phenotypic characteristics of VOCs (transmissibility, disease severity, risk of reinfection, and impacts on diagnostics and vaccine performance), as well as updates on the geographic distribution of VOCs.This edition also includes a summary of a Global Consultation on SARS-CoV-2 Variants of Concern and their Impact on Public Health Interventions"
+	say Typing(3000)
+	say "As for the figures, globally, **181,199,386** cases have been confirmed , with a total of **3,925,435** deaths.**165,788,351** people have recovered which is in itself a good news."
+	say Typing(2000)
+	say "You can find the whole report here :"
+	say Typing(5000)
+	say Url("https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports",
+		text="WHO daily highlight")
+  goto flow Default

@@ -1,0 +1,16 @@
+start:
+	say "The world Health Organization has created a lot of resources (videos, posters)on covid-19 and how to protect from it "
+	say Typing(2000)
+	say "You can fin them here:"
+	say Typing(2000)
+	say Url("https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public#PageContent_C077_Col00",
+		text="Be Ready for coronavirus")
+	say Url("https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public#PageContent_C022_Col00",
+		text= "Protect yourself and others from getting sick")
+	say Url("https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public#PageContent_C064_Col00",
+		text= "How to cope with stress during 2019-nCoV outbreak")
+	say Url("https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public#PageContent_C011_Col00",
+		text= "Stay healthy while travelling")
+	say Url("https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public#PageContent_C036_Col00",
+		text= "Practice food safety")
+  goto flow Default

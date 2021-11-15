@@ -1,0 +1,209 @@
+start:
+  say Typing(1000)
+	say "Let's do a **small quiz** together to tackle the **popular beliefs** and the **fake news** published on social networks in the last few days."
+	say Typing(2000)
+  remember score = 0
+	goto btn0
+
+			
+btn0:
+  say "**Question 1/7**"
+	say "**Coronavirus can be transmitted by mosquito bites.** 🦟"
+  use Button("👍 True", accepts=["true", "True", "yay", "okay", "Okay", "Yes", "Yeah", "yes", "ok", "Ok", "Yup", "yup", "Yeah", "y", "1"]) as btnyes
+  use Button("👎 False", accepts=["Wrong", "wrong", "No", "no", "false", "False", "no", "nope", "noo", "2"]) as btnno
+  say btnyes
+  say btnno
+  hold
+  if (event match btnno) {
+    say OneOf(["😎 Right on!", "🤓 Well done!", "🌟 Bravo!"])
+    remember score = score + 1
+  } else if (event match btnyes) {
+    say OneOf(["😊 Almost!", "😱 Not really..."])
+  } else {
+    say "To ask a question about the coronavirus, you can click on the shortcut ** ''Ask a question''** in the menu 🙂."
+    goto btn0
+  }
+	say Typing(2000)
+	say "❌ **The new coronavirus can NOT be transmitted by mosquito bites**."
+	say Typing(3000)
+	say "The new coronavirus is a respiratory virus that is spread primarily through contact with an infected person, through respiratory droplets emitted when a person, for example, coughs or sneezes, or through droplets of saliva or nasal secretions."
+	say Typing(2000)
+	say "To date, there is no information or evidence to suggest that 2019-nCov could be transmitted by mosquitoes."
+	say Typing(2000)
+	say "✅ To protect yourself, avoid close contact with anyone with a fever or cough, and practice good hand and respiratory hygiene."
+  goto btn1
+
+btn1:
+  say "**Question 2/7**"
+	say "**Children's urine can protect against coronavirus** 👶🧒"
+  use Button("👍 True", accepts=["true", "True", "yay", "okay", "Okay", "Yes", "Yeah", "yes", "ok", "Ok", "Yup", "yup", "Yeah", "y", "1"]) as btnyes
+  use Button("👎 False", accepts=["Wrong", "wrong", "No", "no", "false", "False", "no", "nope", "noo", "2"]) as btnno
+  say btnyes
+  say btnno
+  hold
+  if (event match btnno) {
+    say OneOf(["😎 Right on!", "🤓 Well done!", "🌟 Bravo!"])
+    remember score = score + 1
+  } else if (event match btnyes) {
+    say OneOf(["😊 Almost!", "😱 Not really..."])
+  } else {
+    say "To ask a question about the coronavirus, you can click on the shortcut ** ''Ask a question''** in the menu 🙂."
+    goto btn1
+  }
+  say Typing(2000)
+  say "❌ ** Children's urine can't protect against the new coronavirus.**"
+  say Typing(2000)
+  say "Urine doesn't kill viruses and bacteria."
+  say Typing(2000)
+  say "Actually, urine can contain small amounts of viral or bacterial material."
+  say Typing(2000)
+  say "Washing your hands with a child's urine or using that urine to scrub surfaces will not protect you from the new coronavirus."
+  say Typing(2000)
+  say "✅ Clean your hands often with a hydro-alcoholic product or soap and water. Clean surfaces with simple household disinfectants."
+  goto btn2
+
+btn2:
+  say "**Question 3/7**"
+  say "** Cold weather and snow can kill the coronavirus** 🌨️"
+  use Button("👍 True", accepts=["true", "True", "yay", "okay", "Okay", "Yes", "Yeah", "yes", "ok", "Ok", "Yup", "yup", "Yeah", "y", "1"]) as btnyes
+  use Button("👎 False", accepts=["Wrong", "wrong", "No", "no", "false", "False", "no", "nope", "noo", "2"]) as btnno
+  say btnyes
+  say btnno
+  hold
+  if (event match btnno) {
+    say OneOf(["😎 Right on!", "🤓 Well done!", "🌟 Bravo!"])
+    remember score = score + 1
+  } else if (event match btnyes) {
+    say OneOf(["😊 Almost!", "😱 Not really..."])
+  } else {
+    say "To ask a question about the coronavirus, you can click on the shortcut ** ''Ask a question''** in the menu 🙂."
+    goto btn2
+  }
+  say Typing(2000)
+  say "❌ ** Cold weather and snow can't kill the new coronavirus (2019-nCoV).**"
+  say Typing(2000)
+  say "The normal temperature of the human body remains around 36.5 degrees Celsius and 37 degrees Celsius, regardless of the temperature or weather outside."
+  say Typing(2000)
+  say "Therefore, there is no reason to believe that cold weather can kill the new coronavirus or other pathogens."
+  say Typing(2000)
+  say "✅ The most effective way to protect yourself from 2019-nCoV is to frequently clean your hands with a hydro-alcoholic or soap and water product."
+	goto btn3
+
+btn3:
+  say "**Question 4/7**"
+  say "**Cocaine can protect against coronavirus** 🦠"
+  use Button("👍 True", accepts=["true", "True", "yay", "okay", "Okay", "Yes", "Yeah", "yes", "ok", "Ok", "Yup", "yup", "Yeah", "y", "1"]) as btnyes
+  use Button("👎 False", accepts=["Wrong", "wrong", "No", "no", "false", "False", "no", "nope", "noo", "2"]) as btnno
+  say btnyes
+  say btnno
+  hold
+  if (event match btnno) {
+    say OneOf(["😎 Right on!", "🤓 Well done!", "🌟 Bravo!"])
+    remember score = score + 1
+  } else if (event match btnyes) {
+    say OneOf(["😊 Almost!", "😱 Not really..."])
+  } else {
+    say "To ask a question about the coronavirus, you can click on the shortcut ** ''Ask a question''** in the menu 🙂."
+    goto btn3
+  }
+  say Typing(2000)
+  say "❌ ** Cocaine does NOT protect against the new coronavirus and can be dangerous.**"
+  say Typing(2000)
+  say "Cocaine is an addictive stimulant drug."
+  say Typing (2000)
+  say "Its use causes serious adverse effects and is harmful to people's health."
+  say Typing(2000)
+  say "✅ Clean your hands often with a hydro-alcoholic product or soap and water. Clean surfaces with simple household disinfectants."
+  goto btn4
+
+btn4:
+  say "**Question 5/7**"
+  say "**Coronavirus can be transmitted through objects such as coins and banknotes** 💶"
+	use Button("👍 True", accepts=["true", "True", "yay", "okay", "Okay", "Yes", "Yeah", "yes", "ok", "Ok", "Yup", "yup", "Yeah", "y", "1"]) as btnyes
+  use Button("👎 False", accepts=["Wrong", "wrong", "No", "no", "false", "False", "no", "nope", "noo", "2"]) as btnno
+  say btnyes
+  say btnno
+  hold
+  if (event match btnno) {
+    say OneOf(["😎 Right on!", "🤓 Well done!", "🌟 Bravo!"])
+    remember score = score + 1
+  } else if (event match btnyes) {
+    say OneOf(["😊 Almost!", "😱 Not really..."])
+  } else {
+    say "To ask a question about the coronavirus, you can click on the shortcut ** ''Ask a question''** in the menu 🙂."
+    goto btn4
+  }
+  say Typing(2000)
+  say "❌ **The risk of becoming infected with the new coronavirus (2019-nCoV) by touching objects**, such as coins, banknotes or credit cards, is very low."
+  say Typing(2000)
+  say "Preliminary data indicates that the new coronavirus (2019-nCoV) can survive on surfaces for a few hours or more."
+  say Typing(2000)
+  say "It can happen that an object is contaminated with 2019-nCoV by an infected person coughing or sneezing or touching the object."
+  say Typing(2000)
+  say "With good hand hygiene, the risk of becoming infected with the new coronavirus (2019-nCoV) by touching objects, such as coins, banknotes or credit cards, is very low."
+  say Typing(2000)
+  say "✅ The best protection is frequent hand washing with a hydro-alcoholic or soap and water."
+  goto btn5
+
+btn5:
+  say "**Question 6/7**"
+  say "**Coronavirus can project up to 20 feet from a coughing or sneezing person **"
+  use Button("👍 True", accepts=["true", "True", "yay", "okay", "Okay", "Yes", "Yeah", "yes", "ok", "Ok", "Yup", "yup", "Yeah", "y", "1"]) as btnyes
+  use Button("👎 False", accepts=["Wrong", "wrong", "No", "no", "false", "False", "no", "nope", "noo", "2"]) as btnno
+  say btnyes
+  say btnno
+  hold
+  if (event match btnno) {
+    say OneOf(["😎 Right on!", "🤓 Well done!", "🌟 Bravo!"])
+    remember score = score + 1
+  } else if (event match btnyes) {
+    say OneOf(["😊 Almost!", "😱 Not really..."])
+  } else {
+    say "To ask a question about the coronavirus, you can click on the shortcut ** ''Ask a question''** in the menu 🙂."
+    goto btn5
+  }
+  say Typing(2000)
+  say "❌ **Respiratory droplets project up to three feet away from a coughing or sneezing person.**"
+  say Typing(2000)
+  say "When a person infected with 2019-nCoV coughs or sneezes, the virus is expelled in droplets that can travel some distance from that person."
+  say Typing(2000)
+  say "✅ Therefore, to protect yourself from any respiratory virus, avoid close contact with anyone with a fever or cough, and wash your hands frequently with a hydro-alcoholic product or soap and water."
+	goto btn6
+
+btn6:
+  say "**Question 7/7**"
+  say "**Coronavirus can spread long distances in the air** ⛅"
+	use Button("👍 True", accepts=["true", "True", "yay", "okay", "Okay", "Yes", "Yeah", "yes", "ok", "Ok", "Yup", "yup", "Yeah", "y", "1"]) as btnyes
+  use Button("👎 False", accepts=["Wrong", "wrong", "No", "no", "false", "False", "no", "nope", "noo", "2"]) as btnno
+  say btnyes
+  say btnno
+  hold
+  if (event match btnno) {
+    say OneOf(["😎 Right on!", "🤓 Well done!", "🌟 Bravo!"])
+    remember score = score + 1
+  } else if (event match btnyes) {
+    say OneOf(["😊 Almost!", "😱 Not really..."])
+  } else {
+    say "To ask a question about the coronavirus, you can click on the shortcut ** ''Ask a question''** in the menu 🙂."
+    goto btn6
+  }
+  say Typing(2000)
+  say "❌ ** Coronaviruses are viruses that do NOT travel long distances through the air.**"
+  say Typing(2000)
+  say "The new coronavirus (2019-nCoV) is a respiratory virus that is spread primarily through droplets emitted when an infected person coughs or sneezes, or through droplets of saliva or nasal secretions. These droplets are too heavy to travel far."
+  say Typing(2000)
+  say "An infection could also occur if you touch your eyes, mouth, or nose after coming in contact with a contaminated surface."
+  say Typing(2000)
+  say "✅ Protect yourself by washing your hands frequently with a water-based hand sanitizer or soap and water."
+	goto score
+
+score:
+  say Typing(2000)
+  if (score == 0 || score == 1 || score == 2) {
+    say "**You got {{score}} right answers, at least you learned a lot!!**"
+  } else if (score == 3 || score == 4 || score == 5) {
+    say "**That's not bad at all, you answered {{score}} questions well!**"
+  } else if (score > 5) {
+    say "** Well done, that's a clear round with a score of 6/6!**"
+  }
+  goto flow Default
