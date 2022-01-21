@@ -1,0 +1,18 @@
+start:
+	say "Hello, I am CovidBot"
+	say "I can give you a lot of information from the World Health Organization about the Covid-19 virus."
+	say Question("What would you like to know or learn about ?",
+		buttons=[
+			Button("Good habits to adopt") as btn1,
+			Button("How to wear a mask") as btn2,
+			Button("Statistics") as btn3,
+			Button("Quiz Fake News") as btn4,
+			Button("Useful resources") as btn5
+		])
+	hold
+	if (event match btn1) goto flow good_gestures
+	else if (event match btn2) goto flow mask
+	else if (event match btn3) goto flow figures
+	else if (event match btn4) goto flow fake_news
+	else if (event match btn5) goto flow resources
+	goto end
