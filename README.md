@@ -29,10 +29,5 @@
         Most important need in pandemic is Doctor. User can immediately contact Doctor who is just one click away and can take personal advice for the same.
         
 ### Check it out 
-https://stricthat63.qoom.space/~/DefHacks/index
-        
-## CREDITS
-         1.All credits related to veridied information in this page is given to WHO : https://www.who.int/.
-         2.For our tweet feature all credits to TWITTER.
-         3.Youtube: https://www.youtube.com/watch?v=BzUFQDP8B28&ab_channel=CodeExplained
+ https://amitesh18896.github.io/-DefHack-2021/
         
