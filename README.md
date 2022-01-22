@@ -29,5 +29,5 @@
         Most important need in pandemic is Doctor. User can immediately contact Doctor who is just one click away and can take personal advice for the same.
         
 ### Check it out 
- https://amitesh18896.github.io/-DefHack-2021/
+ https://amitesh18896.github.io/Live-Covid-Updates/
         
