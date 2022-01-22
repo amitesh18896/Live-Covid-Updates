@@ -1,4 +1,4 @@
-# DefHack-2021
+# Live Covid Updates
 ## PROJECT NAME-Covidsol
 
 ### VISION
